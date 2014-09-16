@@ -38,13 +38,14 @@ Attributes
 
 LWRP Usage
 -----
+In your `metadata.rb` you need to add `depends 'slack'` and add `include_recipe 'slack'` to your recipe.
 
 ```ruby
-slack "Say something clever"
+slack_say "Say something clever"
 ```
 
 ```ruby
-slack "say_something_clever" do
+slack_say "say_something_clever" do
   message "Look I'm a Ghost! Boo!"
   icon_emoji ":ghost:"
   not_if { node['im_boring'] }
@@ -52,14 +53,14 @@ end
 ```
 
 ```ruby
-slack "lazy_ghost" do
+slack_say "lazy_ghost" do
   message "Boo! I'm still a ghost"
   icon_emoji ":ghost:"
   action :nothing
 end
 
 something "talk_as_ghost" do
-  notifies :say, "slack[lazy_ghost]", :immediately
+  notifies :say, "slack_say[lazy_ghost]", :immediately
 end
 ```
 
