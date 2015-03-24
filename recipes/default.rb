@@ -19,6 +19,9 @@
 chef_gem "slackr" do
   version '0.0.5'
   action :install
+  # removing compile_time warnings in Chef 12 per:
+  # http://jtimberman.housepub.org/blog/2015/03/20/chef-gem-compile-time-compatibility/
+  compile_time true if Chef::Resource::ChefGem.instance_methods(false).include?(:compile_time)
 end
 
 require 'slackr'
