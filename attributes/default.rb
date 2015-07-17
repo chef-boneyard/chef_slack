@@ -1,1 +1,1 @@
-default[:slack][:webhook_url]         = nil
+default['slack']['webhook_url']         = nil

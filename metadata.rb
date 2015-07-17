@@ -1,4 +1,4 @@
-name             'slack'
+name             'chef_slack'
 maintainer       'Ian Henry'
 maintainer_email 'ihenry@chef.io'
 license          'Apache 2.0'

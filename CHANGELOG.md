@@ -1,4 +1,4 @@
-slack CHANGELOG
+chef_slack CHANGELOG
 ===============
 
 0.1.0

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: slack
+# Cookbook Name:: chef_slack
 # Recipe:: default
 #
 # Copyright 2015, Ian Henry <ihenry@chef.io>
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-chef_gem 'slack-notifier' do
+chef_gem 'slack-notifier' do # ~FC009
   version '1.2.1'
   action :install
   compile_time true if Chef::Resource::ChefGem.instance_methods(false).include?(:compile_time)
