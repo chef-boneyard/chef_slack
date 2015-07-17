@@ -10,5 +10,10 @@
     "security",
     "quality"
   ],
-  "build_nodes": {}
+  "build_nodes": {},
+  "delivery-truck": {
+    "publish": {
+      "github": "chef-cookbooks/chef_slack"
+    }
+  }
 }
