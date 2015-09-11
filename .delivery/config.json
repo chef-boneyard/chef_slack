@@ -3,7 +3,7 @@
   "build_cookbook": {
     "name": "delivery-truck",
     "branch": "master",
-    "git": "https://github.com/opscode-cookbooks/delivery-truck.git"
+    "git": "https://github.com/chef-cookbooks/delivery-truck.git"
   },
   "skip_phases": [
     "smoke",
