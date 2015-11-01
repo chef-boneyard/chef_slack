@@ -17,4 +17,4 @@
 # limitations under the License.
 #
 
-default['slack']['webhook_url']         = nil
+default['slack']['webhook_url'] = nil
