@@ -5,11 +5,11 @@ end
 use_inline_resources
 
 action :notify do
-  if node['slack']['webhook_url']
-    slack = Slack::Notifier.new(node['slack']['webhook_url'])
-  else
-    slack = Slack::Notifier.new(new_resource.webhook_url)
-  end
+  slack = if node['slack']['webhook_url']
+            Slack::Notifier.new(node['slack']['webhook_url'])
+          else
+            Slack::Notifier.new(new_resource.webhook_url)
+          end
 
   new_resource.channels.each do |channel|
     options = {}
