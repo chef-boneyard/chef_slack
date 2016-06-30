@@ -1,42 +1,25 @@
-chef_slack Cookbook
-===================
+# chef_slack Cookbook
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/chef_slack.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef_slack)
-[![Cookbook Version](https://img.shields.io/cookbook/v/chef_slack.svg)](https://supermarket.chef.io/cookbooks/chef_slack)
+[![Build Status](https://travis-ci.org/chef-cookbooks/chef_slack.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef_slack) [![Cookbook Version](https://img.shields.io/cookbook/v/chef_slack.svg)](https://supermarket.chef.io/cookbooks/chef_slack)
 
-This cookbook sends messages to a [Slack](http://www.slack.com) chatroom using the Incoming
-Webhook Integration
+This cookbook sends messages to a [Slack](http://www.slack.com) chatroom using the Incoming Webhook Integration
 
-Requirements
-------------
+## Requirements
 
-#### packages
-- `slack-notifier` - Uses the [slack-notifier](https://github.com/stevenosloan/slack-notifier.git)
-  rubygem to talk to Slack
+### packages
 
+- `slack-notifier` - Uses the [slack-notifier](https://github.com/stevenosloan/slack-notifier.git) rubygem to talk to Slack
 
-Attributes
-----------
+## Attributes
 
-#### slack::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['slack']['webhook_url']</tt></td>
-    <td>String</td>
-    <td>Your Incoming Webhook URL</td>
-    <td><tt>nil</tt></td>
-  </tr>
-</table>
+### slack::default
 
+Key                               | Type   | Description               | Default
+--------------------------------- | ------ | ------------------------- | ------------
+<tt>['slack']['webhook_url']</tt> | String | Your Incoming Webhook URL | <tt>nil</tt>
 
-Custom Resource Usage
------
+## Custom Resource Usage
+
 In your `metadata.rb` you need to add `depends chef_slack'` and add `include_recipe 'chef_slack'` to your recipe. Passing the below will use default attributes
 
 ```ruby
@@ -65,10 +48,8 @@ something "talk_as_test_user_to_multiple_channels" do
 end
 ```
 
+## License & Authors
 
-
-License & Authors
------------------
 ```
 Author: Ian Henry <ihenry@chef.io>
 
