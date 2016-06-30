@@ -72,6 +72,8 @@ License & Authors
 ```
 Author: Ian Henry <ihenry@chef.io>
 
+Author: Jason Rohwedder <jro@risk.io> https://github.com/KennaSecurity/chef-slack
+
 Copyright:: 2009-2015, Chef Software, Inc
 
 Licensed under the Apache License, Version 2.0 (the "License");
