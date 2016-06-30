@@ -37,7 +37,7 @@ Attributes
 
 Custom Resource Usage
 -----
-In your `metadata.rb` you need to add `depends 'slack'` and add `include_recipe 'slack'` to your recipe. Passing the below will use default attributes
+In your `metadata.rb` you need to add `depends chef_slack'` and add `include_recipe 'chef_slack'` to your recipe. Passing the below will use default attributes
 
 ```ruby
 slack_notify "Say Summat!"
@@ -71,6 +71,8 @@ License & Authors
 -----------------
 ```
 Author: Ian Henry <ihenry@chef.io>
+
+Author: Jason Rohwedder <jro@risk.io> https://github.com/KennaSecurity/chef-slack
 
 Copyright:: 2009-2015, Chef Software, Inc
 
