@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the chef_slack cookbook.
 
+## v1.0.0 (2016-09-15)
+- Require Chef 12.1
+- Testing updates
+
 ## 0.2.0
 
 - Initial push to supermarket
