@@ -2,6 +2,14 @@
 
 This file is used to list changes made in each version of the chef_slack cookbook.
 
+## 2.0.0 (2016-10-11)
+- Convert LWRP to a custom resource and use compat_resource cookbook for Chef 12.1+ compatibility
+- Properly support why-run mode now
+- Add a test recipe to ensure notifications actually work
+- Dynamically install the gem within the resource and deprecate the use of the default recipe
+- Properly support notification when channels aren't specified
+- Properly notify the update on the resource when the notify occurs
+
 ## v1.0.0 (2016-09-15)
 - Require Chef 12.1
 - Testing updates
