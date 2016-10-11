@@ -16,10 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-chef_gem 'slack-notifier' do # ~FC009
-  version '1.2.1'
-  action :install
-  compile_time true if Chef::Resource::ChefGem.instance_methods(false).include?(:compile_time)
-end
 
-require 'slack-notifier'
+Chef::Log.warn('The default chef_slack recipe does nothing. See the readme for information on using the slack_notify resources')

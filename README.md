@@ -2,25 +2,25 @@
 
 [![Build Status](https://travis-ci.org/chef-cookbooks/chef_slack.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef_slack) [![Cookbook Version](https://img.shields.io/cookbook/v/chef_slack.svg)](https://supermarket.chef.io/cookbooks/chef_slack)
 
-This cookbook sends messages to a [Slack](http://www.slack.com) chatroom using the Incoming Webhook Integration
+This cookbook sends messages to a [Slack](http://www.slack.com) channel using the Incoming Webhook Integration
 
 ## Requirements
 
-### packages
+### Platforms
 
-- `slack-notifier` - Uses the [slack-notifier](https://github.com/stevenosloan/slack-notifier.git) rubygem to talk to Slack
+- Any platform supported by Chef
 
-## Attributes
+### Chef
 
-### slack::default
+- Chef 12.1+
 
-Key                               | Type   | Description               | Default
---------------------------------- | ------ | ------------------------- | ------------
-<tt>['slack']['webhook_url']</tt> | String | Your Incoming Webhook URL | <tt>nil</tt>
+### Cookbooks
 
-## Custom Resource Usage
+- compat_resource
 
-In your `metadata.rb` you need to add `depends chef_slack'` and add `include_recipe 'chef_slack'` to your recipe. Passing the below will use default attributes
+## slack_notify Resource Usage
+
+In your `metadata.rb` you need to add `depends chef_slack'`. Passing the below will use default attributes
 
 ```ruby
 slack_notify "Say Summat!"
