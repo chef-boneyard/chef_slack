@@ -18,21 +18,9 @@ This cookbook sends messages to a [Slack](http://www.slack.com) channel using th
 
 - compat_resource
 
-### packages
+## slack_notify Resource Usage
 
-- `slack-notifier` - Uses the [slack-notifier](https://github.com/stevenosloan/slack-notifier.git) rubygem to talk to Slack
-
-## Attributes
-
-### slack::default
-
-Key                               | Type   | Description               | Default
---------------------------------- | ------ | ------------------------- | ------------
-<tt>['slack']['webhook_url']</tt> | String | Your Incoming Webhook URL | <tt>nil</tt>
-
-## Custom Resource Usage
-
-In your `metadata.rb` you need to add `depends chef_slack'` and add `include_recipe 'chef_slack'` to your recipe. Passing the below will use default attributes
+In your `metadata.rb` you need to add `depends chef_slack'`. Passing the below will use default attributes
 
 ```ruby
 slack_notify "Say Summat!"
