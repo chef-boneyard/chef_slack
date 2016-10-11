@@ -2,9 +2,21 @@
 
 [![Build Status](https://travis-ci.org/chef-cookbooks/chef_slack.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef_slack) [![Cookbook Version](https://img.shields.io/cookbook/v/chef_slack.svg)](https://supermarket.chef.io/cookbooks/chef_slack)
 
-This cookbook sends messages to a [Slack](http://www.slack.com) chatroom using the Incoming Webhook Integration
+This cookbook sends messages to a [Slack](http://www.slack.com) channel using the Incoming Webhook Integration
 
 ## Requirements
+
+### Platforms
+
+- Any platform supported by Chef
+
+### Chef
+
+- Chef 12.1+
+
+### Cookbooks
+
+- compat_resource
 
 ### packages
 
