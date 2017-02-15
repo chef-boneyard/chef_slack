@@ -12,11 +12,11 @@ This cookbook sends messages to a [Slack](http://www.slack.com) channel using th
 
 ### Chef
 
-- Chef 12.1+
+- Chef 12.5+
 
 ### Cookbooks
 
-- compat_resource
+- none
 
 ## slack_notify Resource Usage
 
