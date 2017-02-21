@@ -40,6 +40,7 @@ slack_notify "channel_nothing" do
   username 'test_user'
   channels ['foo','bar']
   webhook_url 'https://hooks.slack.com/services/XXXX/XXXXXXX/XXXXXX'
+  icon_emoji ':tada:'
   action :nothing
 end
 
