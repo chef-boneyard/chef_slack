@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the chef_slack cookbook.
 
+## 3.1.0 (2017-02-21)
+
+- Add icon_emoji property
+- add icon_emoji to test recipe
+
 ## 3.0.0 (2017-02-14)
 
 - Require Chef 12.5 and remove compat_resource
