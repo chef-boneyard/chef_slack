@@ -23,11 +23,11 @@ This cookbook sends messages to a [Slack](http://www.slack.com) channel using th
 In your `metadata.rb` you need to add `depends chef_slack'`. Passing the below will use default attributes
 
 ```ruby
-slack_notify "Say Summat!"
+chef_slack_notify "Say Summat!"
 ```
 
 ```ruby
-slack_notify "send_notification_message" do
+chef_slack_notify "send_notification_message" do
   message "This is a notification message"
   webhook_url 'https://hooks.slack.com/services/XXXX/XXXXXXX/XXXXXX'
   not_if { node['im_boring'] }
@@ -35,7 +35,7 @@ end
 ```
 
 ```ruby
-slack_notify "channel_nothing" do
+chef_slack_notify "channel_nothing" do
   message "heres a message to kick off later"
   username 'test_user'
   channels ['foo','bar']
@@ -45,7 +45,7 @@ slack_notify "channel_nothing" do
 end
 
 something "talk_as_test_user_to_multiple_channels" do
-  notifies :say, "slack[channel_nothing]", :immediately
+  notifies :notify, "slack[channel_nothing]", :immediately
 end
 ```
 
