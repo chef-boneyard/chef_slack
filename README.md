@@ -45,7 +45,7 @@ slack_notify "channel_nothing" do
 end
 
 something "talk_as_test_user_to_multiple_channels" do
-  notifies :say, "slack[channel_nothing]", :immediately
+  notifies :notify, "slack_notify[channel_nothing]", :immediately
 end
 ```
 
