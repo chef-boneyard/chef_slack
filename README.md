@@ -12,7 +12,7 @@ This cookbook sends messages to a [Slack](http://www.slack.com) channel using th
 
 ### Chef
 
-- Chef 12.5+
+- Chef 12.7+
 
 ### Cookbooks
 
