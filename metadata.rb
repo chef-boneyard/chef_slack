@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license          'Apache-2.0'
 description      'Slack resource for posting to slack.com channels'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '3.1.0'
+version          '3.1.1'
 
 %w(ubuntu debian redhat centos suse opensuse opensuseleap scientific oracle amazon zlinux).each do |os|
   supports os

@@ -2,6 +2,18 @@
 
 This file is used to list changes made in each version of the chef_slack cookbook.
 
+## 3.1.1 (2017-09-01)
+
+- Update README.md to fix property names
+- Test with Local Delivery and not Rake
+- Add a basic chefspec test
+- Update apache2 license string to be a SPDX compliant string
+- Add chef_version compatibility with older chef releases
+- Enabled Foodcritic FC016 again
+- Remove maintainer files
+- Update kitchen config and use dokken-images in the kitchen dokken config
+- Require Chef 12.7 to workaround custom resource issues
+
 ## 3.1.0 (2017-02-21)
 
 - Add icon_emoji property
