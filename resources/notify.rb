@@ -1,6 +1,6 @@
 provides :slack_notify
 
-property :message, String, name_attribute: true
+property :message, String, name_property: true
 property :channels, Array, default: []
 property :username, String
 property :webhook_url, String
