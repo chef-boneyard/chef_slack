@@ -37,7 +37,7 @@ action :notify do
       options['channel'] = channel if new_resource.channels
       options['username'] = new_resource.username if new_resource.username
       options['icon_emoji'] = new_resource.icon_emoji if new_resource.icon_emoji
-      converge_by "notify Slack channel #{channel} with message: #{message}" do
+      converge_by "notify Slack channel #{channel} with message: #{new_resource.message}" do
         slack.ping(new_resource.message, options)
       end
     end
