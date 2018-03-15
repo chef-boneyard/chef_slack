@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the chef_slack cookbook.
 
+## 3.1.2 (2018-03-15)
+
+- Resolve the new FC118 foodcritic warning
+- Resolve a Chef 14 deprecation warning
+
 ## 3.1.1 (2017-09-01)
 
 - Update README.md to fix property names
